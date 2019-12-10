@@ -202,17 +202,17 @@ int showTabM(int n, int x, int y, char *z){
 			else if(i % 2 == 0 && j == 2 || i % 2 == 0 && j == 4) printf("|");	// divisões verticais
 			
 			// como jogar: [1-9] >> numpad
-			else if(i == 0 && j == 1) printf(" %c ", z[0]);
-			else if(i == 0 && j == 3) printf(" %c ", z[1]);
-			else if(i == 0 && j == 5) printf(" %c ", z[2]);
+			else if(i == 4 && j == 1) printf(" %c ", z[0]);
+			else if(i == 4 && j == 3) printf(" %c ", z[1]);
+			else if(i == 4 && j == 5) printf(" %c ", z[2]);
 			
 			else if(i == 2 && j == 1) printf(" %c ", z[3]);
 			else if(i == 2 && j == 3) printf(" %c ", z[4]);
 			else if(i == 2 && j == 5) printf(" %c ", z[5]);
 			
-			else if(i == 4 && j == 1) printf(" %c ", z[6]);
-			else if(i == 4 && j == 3) printf(" %c ", z[7]);
-			else if(i == 4 && j == 5) printf(" %c ", z[8]);
+			else if(i == 0 && j == 1) printf(" %c ", z[6]);
+			else if(i == 0 && j == 3) printf(" %c ", z[7]);
+			else if(i == 0 && j == 5) printf(" %c ", z[8]);
 			
 			else printf(" ");
 		}
