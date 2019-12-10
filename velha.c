@@ -7,26 +7,27 @@
 
 #define TAM 7 // dimensionamento
 
-void showMenu(int n, int x);
-void composition();
-void tab(int n);
-void tab2(int n);
-int showTab(int n, int x, int y, char *z);
-int showTabM(int n, int x, int y, char *z);
-void help();
+// Prot. Function
+void showMenu(int n, int x); // menu inicial
+void composition(); // composiÃ§Ã£o final
+void tab(int n); // bordas horizontais >> 1
+void tab2(int n); // bordas horizontais >> 2
+int showTab(int n, int x, int y, char *z); // tabuleiro jogÃ¡vel
+int showTabM(int n, int x, int y, char *z); // tabuleiro visual >> como jogar
+void help(); // como jogar
 
 /* 
 	09 de dezembro de 2019	
-    Departamento de T.I., UniProjeção (Taguatinga, Campus I)
+    Departamento de T.I., UniProjeÃ§Ã£o (Taguatinga, Campus I)
     
-    Sistemas de Informação (2º semestre)
+    Sistemas de InformaÃ§Ã£o (2Âº semestre)
     Autor: Yan Almeida Garcia
     
     00) Jogo da velha em C.
 		
-	Referência bibliográfica:
-		[01]. "El codigo ASCII", disponível em: https://elcodigoascii.com.ar/
-		[02]. "SLEEP EM C - LINUX [RESOLVIDO]", disponível em: "https://www.vivaolinux.com.br/topico/C-C++/Sleep-em-C-Linux"
+	ReferÃªncia bibliogrÃ¡fica:
+		[01]. "El codigo ASCII", disponÃ­vel em: https://elcodigoascii.com.ar/
+		[02]. "SLEEP EM C - LINUX [RESOLVIDO]", disponÃ­vel em: "https://www.vivaolinux.com.br/topico/C-C++/Sleep-em-C-Linux"
 		
 */
 
@@ -44,7 +45,7 @@ int main(){
 // Funtions
 	// menu
 void showMenu(int n, int x){
-	system("cls"); // limpa a tela sempre que a função é chamada
+	system("cls"); // limpa a tela sempre que a funÃ§Ã£o Ã© chamada
 	
 	puts("\n\n");
 	tab(x);
@@ -153,9 +154,9 @@ void tab2(int n){
 	for(i = 0; i < n; i++) printf("%c", S);
 }
 
-	// tabuleiro jogável
+	// tabuleiro jogÃ¡vel
 int showTab(int n, int x, int y, char *z){
-	system("cls"); // limpa a tela sempre que a função é chamada
+	system("cls"); // limpa a tela sempre que a funÃ§Ã£o Ã© chamada
 	puts("\n\n\t[ 0 ]. Voltar\n");
 	tab(13);
 	
@@ -164,8 +165,8 @@ int showTab(int n, int x, int y, char *z){
 		for(j = 0; j < y; j++){	
 			if(j == 0 || j == y - 1) printf("%c", S); // bordas laterais	
 		
-			else if(i % 2 == 1 && j % 2 == 1) printf("---"); // divisões horizontais	
-			else if(i % 2 == 0 && j == 2 || i % 2 == 0 && j == 4) printf("|");	// divisões verticais
+			else if(i % 2 == 1 && j % 2 == 1) printf("---"); // divisÃµes horizontais	
+			else if(i % 2 == 0 && j == 2 || i % 2 == 0 && j == 4) printf("|");	// divisÃµes verticais
 			
 			// jogabilidade: numpad do teclado
 			else if(i == 4 && j == 1) printf(" %c ", z[0]);
@@ -180,7 +181,7 @@ int showTab(int n, int x, int y, char *z){
 			else if(i == 0 && j == 3) printf(" %c ", z[7]);
 			else if(i == 0 && j == 5) printf(" %c ", z[8]);
 
-			else printf(" "); // espaço entre "---"
+			else printf(" "); // espaÃ§o entre "---"
 		}
 	}
 	
@@ -197,8 +198,8 @@ int showTabM(int n, int x, int y, char *z){
 		for(j = 0; j < y; j++){	
 			if(j == 0 || j == y - 1) printf("%c", S); // bordas laterais	
 		
-			else if(i % 2 == 1 && j % 2 == 1) printf("---"); // divisões horizontais	
-			else if(i % 2 == 0 && j == 2 || i % 2 == 0 && j == 4) printf("|");	// divisões verticais
+			else if(i % 2 == 1 && j % 2 == 1) printf("---"); // divisÃµes horizontais	
+			else if(i % 2 == 0 && j == 2 || i % 2 == 0 && j == 4) printf("|");	// divisÃµes verticais
 			
 			// como jogar: [1-9] >> numpad
 			else if(i == 0 && j == 1) printf(" %c ", z[0]);
