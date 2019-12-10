@@ -37,13 +37,13 @@ char posS[9] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
 unsigned char S = 731; // bordas
 
 int main(){
-	showMenu(menu, 18);	
+	showMenu(menu, 18);	// menu inicial >> composição final
 	
 	return 0;
 }
 
 // Funtions
-	// menu
+	// menu inicial
 void showMenu(int n, int x){
 	system("cls"); // limpa a tela sempre que a função é chamada
 	
@@ -74,17 +74,17 @@ void showMenu(int n, int x){
 		
 		case 2:
 			puts("\n\n");
-			showTabM(TAM, 5, TAM, posS);
+			showTabM(TAM, 5, TAM, posS); // tabuleiro visual >> como jogar
 			getch();
 			break;
 		default:
-			showMenu(menu, 18);	
+			showMenu(menu, 18);	// menu inicial
 			break;
 	}
 }
 
 void composition(){
-	char res;
+	char res, a[2] = {'1', '2'};
 	int contJog, played, vezde = 0;
 	do{
 		contJog = 1;
@@ -92,22 +92,22 @@ void composition(){
 	
 		do{	
 			puts("\n\n");
-			showTab(TAM, 5, TAM, posS);		
+			showTab(TAM, 5, TAM, posS); // tabuleiro jogável	
 			
-			printf("\n\n\tCasas [1-9]: ");
-			scanf(" %i", &played);
-			if(played == 0) showMenu(menu, 18);
+			printf("\n\n\tMarque [1-9]: ");
+			scanf(" %i", &played);	
 			
-			if(played < 1 || played > 9) played = 0;
-			else  if(posS[played - 1] != ' ') played = 0;
+			if(played == 0) showMenu(menu, 18); // retorna ao menu inicial
+			if(played < 1 || played > 9) played = 0; // restringe o número de casas
+			else  if(posS[played - 1] != ' ') played = 0; // marca uma casa nula
 			else{
-				if(vezde % 2 == 0) posS[played - 1] = 'X';
-				else posS[played - 1] = 'O';
+				if(vezde % 2 == 0) posS[played - 1] = 'X'; // marca com 'X' a casa nula
+				else posS[played - 1] = 'O'; // marca com 'O' a casa nula
 				
 				contJog++;
 				vezde++;
 			}
-			
+				// condições para 'X' ganhar
 			if (posS[0] == 'X' && posS [1] == 'X' && posS[2] == 'X') contJog = 11;
 			if (posS[3] == 'X' && posS [4] == 'X' && posS[5] == 'X') contJog = 11;
 			if (posS[6] == 'X' && posS [7] == 'X' && posS[8] == 'X') contJog = 11;
@@ -116,7 +116,7 @@ void composition(){
 			if (posS[2] == 'X' && posS [5] == 'X' && posS[8] == 'X') contJog = 11;
 			if (posS[0] == 'X' && posS [4] == 'X' && posS[8] == 'X') contJog = 11;
 			if (posS[2] == 'X' && posS [4] == 'X' && posS[6] == 'X') contJog = 11;
-			  
+				// condições para 'X' ganhar
 			if (posS[0] == 'O' && posS [1] == 'O' && posS[2] == 'O') contJog = 12;
 			if (posS[3] == 'O' && posS [4] == 'O' && posS[5] == 'O') contJog = 12;
 			if (posS[6] == 'O' && posS [7] == 'O' && posS[8] == 'O') contJog = 12;
@@ -125,10 +125,9 @@ void composition(){
 			if (posS[2] == 'O' && posS [5] == 'O' && posS[8] == 'O') contJog = 12;
 			if (posS[0] == 'O' && posS [4] == 'O' && posS[8] == 'O') contJog = 12;
 			if (posS[2] == 'O' && posS [4] == 'O' && posS[6] == 'O') contJog = 12;
-			
 		}while(contJog <= 9);
 		
-		showTab(TAM, 5, TAM, posS);
+		showTab(TAM, 5, TAM, posS); // tabuleiro jogável
 		if(contJog == 10) printf("\n\n\tJogo Empatado.");
 		if(contJog == 11) printf("\n\n\tVencedor X!");
 		if(contJog == 12) printf("\n\n\tVencedor O!");	
@@ -137,29 +136,26 @@ void composition(){
 		scanf(" %s", &res);
 	
 		res = toupper(res);
-		if(res == 'N') showMenu(menu, 18);
+		if(res == 'N') showMenu(menu, 18); // retorna ao menu inicial
 	}while(res == 'S');
 	
 	getch();
 }
-
 	// bordas horizontais >> 1
 void tab(int n){
 	printf("\t");
 	for(i = 0; i < n; i++) printf("%c", S);
 }
-
 	// bordas horizontais >> 2
 void tab2(int n){
 	for(i = 0; i < n; i++) printf("%c", S);
 }
-
 	// tabuleiro jogável
 int showTab(int n, int x, int y, char *z){
 	system("cls"); // limpa a tela sempre que a função é chamada
 	puts("\n\n\t[ 0 ]. Voltar\n");
 	tab(13);
-	
+
 	for(i = 0; i < x; i++){
 		printf("\n\t");
 		for(j = 0; j < y; j++){	
@@ -188,7 +184,6 @@ int showTab(int n, int x, int y, char *z){
 	puts("");
 	tab(13);	
 }
-
 	// tabuleiro visual >> como jogar
 int showTabM(int n, int x, int y, char *z){
 	tab(13);
@@ -223,7 +218,6 @@ int showTabM(int n, int x, int y, char *z){
 	
 	help();
 }
-
 	// como jogar
 void help(){
 	printf("\n\n ");
@@ -235,7 +229,7 @@ void help(){
 	
 	tab2(29); // bordas horizontais
 		
-	sleep(8); // pausa de 8 secs >> limpa a tela e retorna ao menu
+	sleep(8); // pausa de 8 secs 
 	
-	showMenu(menu, 18); 
+	showMenu(menu, 18); // retorna ao menu inicial
 }
