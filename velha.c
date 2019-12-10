@@ -214,7 +214,7 @@ int showTabM(int n, int x, int y, char *z){
 			else if(i == 0 && j == 3) printf(" %c ", z[7]);
 			else if(i == 0 && j == 5) printf(" %c ", z[8]);
 			
-			else printf(" ");
+			else printf(" "); // espaço entre "---"
 		}
 	}
 	
@@ -230,11 +230,8 @@ void help(){
 	tab2(29); // bordas horizontais
 		
 	printf("\n %c"
-		" Utilize os n%cmeros do te-"
-		" %c"
-		"\n %c"
-		" clado para jogar.        "
-		" %c\n ", S, 163, S, S, S);
+		" Utilize os n%cmeros do te- %c"
+		"\n %c clado para jogar.         %c\n ", S, 163, S, S, S);
 	
 	tab2(29); // bordas horizontais
 		
