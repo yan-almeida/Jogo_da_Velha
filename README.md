@@ -39,4 +39,4 @@
 ![20191211_2010580750](https://user-images.githubusercontent.com/56321281/70670471-cde08f80-1c57-11ea-92e9-47a5c3b1b090.gif)
 
 **Menu Secundário** *_1 - SOLO*
-![Velha GIF-source](https://user-images.githubusercontent.com/56321281/70670745-b950c700-1c58-11ea-8ffa-08ebf8d20696.gif)
+![Velha GIF-downsized_large](https://user-images.githubusercontent.com/56321281/70670861-177daa00-1c59-11ea-91c3-6b314615df0b.gif)
