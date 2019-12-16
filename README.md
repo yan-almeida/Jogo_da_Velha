@@ -16,7 +16,7 @@
 **Menu Secundário** *_2 - DUPLA|JOGAR_*
 ![20191211_2010580237](https://user-images.githubusercontent.com/56321281/70670021-bb198b00-1c56-11ea-9de6-078a34a1105c.gif)
 
-*          em jogo >> 'O' vencendo*
+*          em jogo >> 'O' vencendo
 ![20191211_2010580270](https://user-images.githubusercontent.com/56321281/70670123-f61bbe80-1c56-11ea-8055-3694e0983206.gif)
 ![20191211_2010580301](https://user-images.githubusercontent.com/56321281/70670135-016eea00-1c57-11ea-8019-27d8109c2c74.gif)
 ![20191211_2010580323](https://user-images.githubusercontent.com/56321281/70670157-0af85200-1c57-11ea-9c76-b5d3d31fe1da.gif)
@@ -25,15 +25,13 @@
 ![20191211_2010580435](https://user-images.githubusercontent.com/56321281/70670215-3418e280-1c57-11ea-9de4-ed3382d1dc2a.gif)
 ![20191211_2010580527](https://user-images.githubusercontent.com/56321281/70670272-5ad71900-1c57-11ea-8eaa-b14614e2b53a.gif)
 
-*          em jogo >> 'X' vencendo*
+*          em jogo >> 'X' vencendo
 ![20191211_2010580547](https://user-images.githubusercontent.com/56321281/70670291-6296bd80-1c57-11ea-918d-a6a5754c1c12.gif)
 ![20191211_2010580557](https://user-images.githubusercontent.com/56321281/70670301-6591ae00-1c57-11ea-8b88-6074aff5c83f.gif)
 ![20191211_2010580573](https://user-images.githubusercontent.com/56321281/70670308-69253500-1c57-11ea-800c-58eb69486891.gif)
 ![20191211_2010580595](https://user-images.githubusercontent.com/56321281/70670319-6cb8bc00-1c57-11ea-80c6-41a3e32ac534.gif)
 ![20191211_2010580633](https://user-images.githubusercontent.com/56321281/70670326-74786080-1c57-11ea-8473-a70eeafdcf44.gif)
 ![20191211_2010580675](https://user-images.githubusercontent.com/56321281/70670340-79d5ab00-1c57-11ea-9b69-1ab29d283717.gif)
-![20191211_2010580323](https://user-images.githubusercontent.com/56321281/70670151-07fd6180-1c57-11ea-8529-a7cb02a34082.gif)
-![20191211_2010580323](https://user-images.githubusercontent.com/56321281/70670155-0a5fbb80-1c57-11ea-8484-316e8cd13c56.gif)
 ***Retorna ao Menu Secundário***
 
 ![20191211_2010580750](https://user-images.githubusercontent.com/56321281/70670471-cde08f80-1c57-11ea-92e9-47a5c3b1b090.gif)
